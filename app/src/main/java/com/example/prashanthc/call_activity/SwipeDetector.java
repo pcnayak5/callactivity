@@ -11,7 +11,9 @@ public class SwipeDetector implements View.OnTouchListener {
         LR, // Left to right
         RL,
         TB,
-        BT,// Right to left
+        BT,
+        Start,
+        Stop,// Right to left
         None // Action not found
     }
 

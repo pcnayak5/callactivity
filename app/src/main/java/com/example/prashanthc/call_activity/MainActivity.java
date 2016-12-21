@@ -3,7 +3,8 @@ package com.example.prashanthc.call_activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,8 +17,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] contacts = {"Medical Emergency\n04422578888", "Security\n04422579999", "Tele Counselling\n04422575555", "Lan Complaints\n04422575987",
-            "Electrical Complaints\n04422578187", "CCW Office\n04422578504"};
+    String[] contacts = {" Medical Emergency\n 04422578888", " Security\n 04422579999", " Tele Counselling\n 04422575555", " Lan Complaints\n 04422575987",
+            " Electrical Complaints\n 04422578187", " CCW Office\n 04422578504"};
 
     String[] phone = {"04422578888", "04422579999", "04422575555", "04422575987", "04422578187", "04422578504"};
     Integer[] imgid = {
@@ -64,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     if (swipeDetector.getAction() == SwipeDetector.Action.LR) {
 
                         Intent tocall;
+
+
 
                         switch (position) {
                             case 0: {
